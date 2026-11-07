@@ -1,0 +1,12 @@
+# PyTorch는 GPU 빌드를 따로 설치 (RTX 50 시리즈 = cu128):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+fastapi
+uvicorn[standard]
+python-multipart
+ultralytics
+opencv-python<5  # 5.x에서 HoughLinesP 출력 shape 변경으로 stair_service 오류
+numpy
+scipy
+einops
+Pillow
+transformers

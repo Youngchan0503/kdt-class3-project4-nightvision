@@ -62,9 +62,3 @@
   - 프로젝트 최종 보고서 (문제 정의, 전체 아키텍처 다이어그램, 4단계 결함 진단 및 극복 과정, 국토부 안전 기준 메트릭).
 * **`STAIR_AI_TECH_LOG.md`**:
   - 기술 회고록 (CV vs DeepLearning 선택 이유, 3D 합성 데이터 Sim-to-Real 갭, 4차례에 걸친 데이터셋 튜닝 시행착오, 하이브리드 비전 파이프라인 설계 배경).
-
----
-
-### 5️⃣ `05_legacy_reference/` (이전 레거시 프로젝트 참고용)
-* **`pose_detector.py` / `posture_analyzer.py`**:
-  - MediaPipe 기반 자세 추정 및 관절 각도 분석 이전 프로젝트 코드.
