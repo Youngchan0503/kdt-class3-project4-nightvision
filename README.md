@@ -1,0 +1,51 @@
+# 🌟 AI Computer Vision Suite: Posture & Night Stair Detection
+
+현대적인 **React 19 프론트엔드**와 **FastAPI 백엔드** 아키텍처로 구축된 2가지 핵심 컴퓨터 비전 대시보드입니다.
+
+---
+
+## 📂 통합 아키텍처 (Architecture)
+
+```
+c:\project4/
+├── 01_posture_checker/          # 01. AI 거북목 체커 원본 모듈 (MediaPipe Pose)
+├── backend/
+│   ├── main.py                  # 통합 FastAPI REST API 서버 (Port: 8000)
+│   ├── test_api.py              # 백엔드 엔드포인트 단위 테스트
+│   └── services/
+│       ├── posture_service.py   # 01. AI 거북목 체커 서비스
+│       └── stair_service.py     # 02. 야간 계단 탐지 & 스마트폰 보행 안전 가이드 (CLAHE/Retinex/Depth)
+├── frontend/
+│   ├── src/
+│   │   ├── App.jsx              # 통합 쉘 레이아웃 (사이드바 네비게이션)
+│   │   ├── components/          # Sidebar, Header, FileUploader
+│   │   ├── pages/
+│   │   │   ├── OverviewPage.jsx # 프로젝트 카탈로그 허브
+│   │   │   ├── PosturePage.jsx  # P1 실시간 웹캠 & 스냅샷 자세 진단기
+│   │   │   └── StairPage.jsx    # P2 스마트폰/웹캠/사진 업로드 야간 계단 감지기 (내리막 1인칭 특화)
+│   │   └── utils/api.js         # REST API 통신 클라이언트
+│   └── dist/                    # 고속 프로덕션 빌드 완료된 React 번들 (273 kB)
+├── start_backend.bat            # 백엔드 서버 원클릭 실행 스크립트 (:8000)
+└── start_frontend.bat           # 프론트엔드 개발 서버 원클릭 실행 스크립트 (:5173)
+```
+
+---
+
+## 🚀 실행 방법 (Execution Guide)
+
+### 1단계: 백엔드 API 서버 실행 (FastAPI)
+```powershell
+c:\project4\.venv\Scripts\python.exe -m uvicorn backend.main:app --host 127.0.0.1 --port 8000 --reload
+```
+* 또는 탐색기에서 **`start_backend.bat`** 더블 클릭
+* API 서버 주소: **`http://127.0.0.1:8000`**
+* Swagger 자동 문서: **`http://127.0.0.1:8000/docs`**
+
+### 2단계: 프론트엔드 웹 대시보드 실행 (React + Vite)
+```powershell
+cd c:\project4\frontend
+npm run dev
+```
+* 또는 탐색기에서 **`start_frontend.bat`** 더블 클릭
+* 대시보드 브라우저 주소: **`http://localhost:5173`**
+*(Vite 프록시가 설정되어 있어 프론트엔드에서 `/api` 호출 시 백엔드로 자동 연동됩니다)*

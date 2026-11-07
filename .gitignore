@@ -1,0 +1,23 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node / frontend build
+node_modules/
+frontend/dist/
+
+# Secrets / local env (none present now — kept out by default)
+.env
+.env.*
+*.pem
+*.key
+
+# GitHub rejects files over 100MB (418MB legacy weight)
+backup/legacy_models_and_runs/LOL_v1.pth
+
+# OS / editor
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/

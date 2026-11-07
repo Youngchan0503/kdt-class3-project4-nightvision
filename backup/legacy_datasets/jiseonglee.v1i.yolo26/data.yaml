@@ -1,0 +1,14 @@
+path: C:/project4/jiseonglee.v1i.yolo26
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 2
+names: ['ramp', 'stair']
+
+roboflow:
+  workspace: sstonne
+  project: jiseonglee
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/sstonne/jiseonglee/dataset/1
