@@ -1,6 +1,0 @@
-path: C:/project4/dataset_custom_stairs
-train: images/train
-val: images/val
-
-nc: 2
-names: ['ascending_stairs', 'descending_stairs']

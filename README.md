@@ -26,7 +26,6 @@ kdt-class3-project4-nightvision/
 │   │   └── utils/api.js         # REST API 통신 클라이언트
 ├── runs/custom_stairs_seg/      # 학습된 YOLO26-Seg 계단 모델 (best.pt)
 ├── dataset_custom_stairs/       # 커스텀 계단 데이터셋
-├── ai_ml_review_files/          # AI/ML 리뷰용 코드 정리본
 ├── requirements.txt             # Python 의존성
 ├── start_backend.bat            # 백엔드 서버 원클릭 실행 스크립트 (:8000)
 └── start_frontend.bat           # 프론트엔드 개발 서버 원클릭 실행 스크립트 (:5173)
