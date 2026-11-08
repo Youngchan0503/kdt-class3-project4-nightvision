@@ -1,7 +1,0 @@
-path: c:/project4/stairs_night_augmented
-train: train/images
-val: valid/images
-test: test/images
-
-nc: 1
-names: ['stair']

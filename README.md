@@ -24,12 +24,27 @@ kdt-class3-project4-nightvision/
 │   │   │   ├── SafetyGuidePage.jsx # 보행 안전 가이드
 │   │   │   └── TechSpecsPage.jsx   # 기술 사양
 │   │   └── utils/api.js         # REST API 통신 클라이언트
-├── runs/custom_stairs_seg/      # 학습된 YOLO26-Seg 계단 모델 (best.pt)
-├── dataset_custom_stairs/       # 커스텀 계단 데이터셋
+├── runs/custom_stairs_seg/      # 현재 사용 중인 YOLO26-Seg 2클래스 모델 (best.pt) + 학습 로그
+├── dataset_custom_stairs/       # 직접 촬영·라벨링한 첫 단차 데이터셋 (123장, 2클래스)
+├── train_custom_stairs.py       # 최종 모델 학습 스크립트
+├── yolo26n-seg.pt               # YOLO26n-seg 기본 가중치
+├── docs/
+│   ├── presentation/            # 발표 자료 (pptx, 이전 발표 기획 md)
+│   ├── reports/                 # 프로젝트 보고서, 기술 회고록
+│   └── 모델학습_코드_정리.xlsx    # 학습 코드 읽기 순서 & 모델별 결과
+├── backup/
+│   ├── legacy_models_and_runs/  # 이전 학습 결과 (stairs_yolo26 = 최종 학습의 베이스 모델)
+│   ├── legacy_scripts/          # 이전 데이터 준비·학습·실험 스크립트
+│   ├── legacy_datasets/
+│   │   ├── public/              # 공개 데이터셋 (stairs.v3i, jiseonglee, 야간 합성, coco8)
+│   │   └── raw_photos/          # 팀원이 직접 촬영한 원본 사진 + 라벨
+│   └── experiment_images/       # 실험 결과·디버그 이미지
 ├── requirements.txt             # Python 의존성
 ├── start_backend.bat            # 백엔드 서버 원클릭 실행 스크립트 (:8000)
 └── start_frontend.bat           # 프론트엔드 개발 서버 원클릭 실행 스크립트 (:5173)
 ```
+
+> ⚠️ `backend/`, `runs/custom_stairs_seg/`, `dataset_custom_stairs/`, `backup/legacy_models_and_runs/stairs_yolo26/`, `yolo26n-seg.pt`, `train_custom_stairs.py`는 코드가 경로를 직접 참조하므로 위치를 옮기지 마세요.
 
 ---
 
