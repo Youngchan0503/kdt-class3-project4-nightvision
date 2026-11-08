@@ -1,0 +1,9 @@
+[모델] realtime/experiments/step2_stairs_v3/weights/best.pt 로딩 완료 / 클래스 수: 1
+[모델] realtime/experiments/step2_stairs_v3/weights/best.pt / conf 0.25
+어두운 사진 49장: 계단 탐지 27장 (55%), 탐지된 사진의 평균 신뢰도 0.78 / 전체 탐지 클래스 {'stair': 30}
+밝은 사진 54장: 계단 탐지 47장 (87%), 탐지된 사진의 평균 신뢰도 0.83 / 전체 탐지 클래스 {'stair': 54}
+평균 추론 24.0 ms
+   han01_0.jpg    dark  stair=True conf=0.87
+   han01_1.jpg    light stair=True conf=0.62
+   han02_0.jpg    dark  stair=True conf=0.83
+   han02_1.jpg    light stair=False conf=0.00

@@ -1,0 +1,37 @@
+{
+ "model": "realtime/experiments/step2_stairs_v3/weights/best.pt",
+ "gamma": 1.6,
+ "clahe_clip": 3.0,
+ "results": [
+  {
+   "steps": "clahe+gamma",
+   "always": true,
+   "very_dark": {
+    "n": 31,
+    "hit": 23,
+    "rate": 0.7419354838709677,
+    "area": 0.4119278621331765,
+    "conf": 0.7474197136319202
+   },
+   "dark": {
+    "n": 49,
+    "hit": 40,
+    "rate": 0.8163265306122449,
+    "area": 0.4130169248689059,
+    "conf": 0.7614588603377342
+   },
+   "light": {
+    "n": 54,
+    "hit": 41,
+    "rate": 0.7592592592592593,
+    "area": 0.2946900368521734,
+    "conf": 0.8093995706337255
+   },
+   "pairs": 28,
+   "pair_iou": 0.5283748687669857,
+   "pair_iou50": 19,
+   "pre_ms_dark": 42.41428571428572,
+   "infer_ms": 24.791262135922327
+  }
+ ]
+}

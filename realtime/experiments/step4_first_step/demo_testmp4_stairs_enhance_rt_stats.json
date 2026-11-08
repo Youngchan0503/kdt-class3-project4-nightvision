@@ -1,0 +1,20 @@
+{
+ "src": "realtime\\testmp4.mp4",
+ "model": "realtime\\experiments\\step2_stairs_v3\\weights\\best.pt",
+ "enhance": "clahe+gamma",
+ "conf": 0.25,
+ "out": "realtime\\experiments\\step4_first_step\\demo_testmp4_stairs_enhance_rt.mp4",
+ "frames": 995,
+ "fps": 30.0,
+ "frame_period_ms": 33.3,
+ "mean_cost_ms": 80.9,
+ "p95_cost_ms": 96.5,
+ "analyzed_frames": 415,
+ "skipped_frames": 580,
+ "analyzed_ratio": 0.417,
+ "mean_result_age_frames": 4.12,
+ "max_result_age_frames": 8,
+ "mean_result_age_ms": 137.5,
+ "frames_showing_detection": 885,
+ "showing_detection_ratio": 0.889
+}

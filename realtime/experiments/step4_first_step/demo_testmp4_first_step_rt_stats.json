@@ -1,0 +1,20 @@
+{
+ "src": "realtime\\testmp4.mp4",
+ "model": "realtime\\experiments\\step4_first_step\\weights\\best.pt",
+ "enhance": "none",
+ "conf": 0.25,
+ "out": "realtime\\experiments\\step4_first_step\\demo_testmp4_first_step_rt.mp4",
+ "frames": 995,
+ "fps": 30.0,
+ "frame_period_ms": 33.3,
+ "mean_cost_ms": 23.8,
+ "p95_cost_ms": 26.7,
+ "analyzed_frames": 992,
+ "skipped_frames": 3,
+ "analyzed_ratio": 0.997,
+ "mean_result_age_frames": 1.02,
+ "max_result_age_frames": 4,
+ "mean_result_age_ms": 34.0,
+ "frames_showing_detection": 459,
+ "showing_detection_ratio": 0.461
+}

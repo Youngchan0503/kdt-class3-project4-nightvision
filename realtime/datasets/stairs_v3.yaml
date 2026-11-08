@@ -1,0 +1,12 @@
+# Roboflow Universe "stairs" v3 (CC BY 4.0)
+# https://universe.roboflow.com/law-jqmvh/stairs-czu57/dataset/3
+# 다운로드: 2026-09-29 / 1,952장 (train 1,608 / valid 230 / test 114) / 폴리곤 세그멘테이션
+# 실제 파일은 backup 폴더에 있다 (옮기지 않고 경로만 가리킴).
+# ultralytics는 상대 경로를 자체 datasets 폴더 기준으로 해석하므로 절대 경로를 쓴다.
+path: C:/kdt-class3-project4-nightvision/backup/legacy_datasets/public/stairs.v3i.yolo26
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 1
+names: ['stair']

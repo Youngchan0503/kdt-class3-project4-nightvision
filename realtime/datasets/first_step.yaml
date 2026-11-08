@@ -1,0 +1,10 @@
+# 직접 촬영·라벨링한 첫 단차 데이터 (팀 자체 데이터)
+# 사진마다 발 앞 첫 디딤판을 4개 꼭짓점 폴리곤으로 라벨링
+# 123장 (train 97 / val 26), 원본 3000x4000 또는 4288x5712
+# ultralytics는 상대 경로를 자체 datasets 폴더 기준으로 해석하므로 절대 경로를 쓴다.
+path: C:/kdt-class3-project4-nightvision/dataset_custom_stairs
+train: images/train
+val: images/val
+
+nc: 2
+names: ['ascending_stairs', 'descending_stairs']
