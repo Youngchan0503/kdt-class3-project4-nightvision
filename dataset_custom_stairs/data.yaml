@@ -1,4 +1,3 @@
-path: C:/project4/dataset_custom_stairs
 train: images/train
 val: images/val
 

@@ -1,7 +1,7 @@
 task: segment
 mode: train
-model: C:\project4\backup\legacy_models_and_runs\stairs_yolo26\exp\weights\best.pt
-data: C:\project4\dataset_custom_stairs\data.yaml
+model: C:\kdt-class3-project4-nightvision\backup\legacy_models_and_runs\stairs_yolo26\exp\weights\best.pt
+data: C:\kdt-class3-project4-nightvision\dataset_custom_stairs\data.yaml
 epochs: 25
 time: null
 patience: 100
@@ -10,9 +10,9 @@ imgsz: 640
 save: true
 save_period: -1
 cache: false
-device: cpu
+device: "0"
 workers: 8
-project: C:\project4\runs\custom_stairs_seg
+project: C:\kdt-class3-project4-nightvision\runs\custom_stairs_seg
 name: exp
 exist_ok: true
 pretrained: true
@@ -46,6 +46,7 @@ quantize: null
 dnn: false
 plots: true
 nms: null
+tile: false
 source: null
 vid_stride: 1
 stream_buffer: false
@@ -111,4 +112,4 @@ auto_augment: randaugment
 erasing: 0.4
 cfg: null
 tracker: tracktrack.yaml
-save_dir: C:\project4\runs\custom_stairs_seg\exp
+save_dir: C:\kdt-class3-project4-nightvision\runs\custom_stairs_seg\exp
